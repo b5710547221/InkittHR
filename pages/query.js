@@ -26,7 +26,7 @@ const min_characters = 0;
 
 if (!isNaN(input.value) || input.value.length < min_characters ) { 
     return;
-} else if(result > min_characters){ 
+} else if(result.length > min_characters){ 
     window.hinterXHR.abort();
     window.hinterXHR.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
